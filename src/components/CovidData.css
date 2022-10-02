@@ -1,60 +1,71 @@
-h1{
-    background-color: aqua;
-    text-align: center;
+h1 {
+  background-color: aqua;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 10px;
 }
 body {
-    background-color: white;
-    }
-    .covidData {
-    background-color: black;
-    width: 30%;
+  background-color: white;
+}
+.covidData {
+  background-color: black;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* input stylings */
+
+.covidData__form {
+  padding: 10px;
+  margin: 20px;
+}
+.covidData__input input {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+/* input{
     margin: auto;
-    margin-top: 15px;
-    border-radius: 6px;
-    padding: 10px;
-    }
-    
-    /* input stylings */
-    
-    .covidData__form {
-    padding: 10px;
-    margin: 20px;
-    }
-    .covidData__input input {
-    width: 400px;
-    height: 50px;
-    text-align: center;
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    .covidData__input button {
-    width: 80px;
-    height: 50px;
-    margin-top: 10px;
-    background-color: rgb(86, 8, 243);
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 5px 5px 5px rgb(71, 67, 67);
-    cursor: pointer;
-    }
-    
-    /* detail stylings */
-    
-    .covidData__country__info {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    padding-left: 10px;
-    background-color: white;
-    margin-top: 20px;
-    padding: 2px;
-    text-shadow: 1px 1px 1px rgb(71, 67, 67);
-    box-shadow: 5px 5px 5px rgb(71, 67, 67);
-    /* display: none; */
-    }
-    
+    display: block;
+} */
+div {
+  text-align: center;
+}
+.covidData__input button {
+  width: 120px;
+  height: 50px;
+  margin-top: 8px;
+  margin-left: 20px;
+  background-color: rgb(86, 8, 243);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(71, 67, 67);
+  cursor: pointer;
+}
+
+/* detail stylings */
+
+.covidData__country__info {
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-left: 10px;
+  background-color: white;
+  margin-top: 20px;
+  padding: 2px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 1px rgb(71, 67, 67);
+  box-shadow: 5px 5px 5px rgb(71, 67, 67);
+  /* display: none; */
+}

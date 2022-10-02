@@ -1,13 +1,3 @@
-// import React from 'react'
-// import "./CovidData.css"
-// export  function CovidData() {
-//   return (
-//     <div>
-//         <h1>Covid-19</h1>
-//         </div>
-//   )
-// }
-
 import React, { useEffect, useState } from "react";
 import "./CovidData.css";
 
@@ -20,13 +10,15 @@ export function CovidData() {
   const [deathCases, setDeathCases] = useState("");
   const [recoveredCases, setRecoveredCases] = useState("");
   const [userInput, setUserInput] = useState("");
-  const [darkTheme, setDarkTheme] = useState(false);
+  //const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/countries")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        //setData("");
+        
       });
   }, []);
 
@@ -50,6 +42,7 @@ export function CovidData() {
 
   const handleSearch = (e) => {
     setUserInput(e.target.value);
+
     // covidData__country__info ="block"
   };
 
@@ -81,17 +74,16 @@ export function CovidData() {
         color: darkTheme ? "white" : "black",
       }} */}
 
-      <h1>COVID-19 CASES COUNTRY WISE</h1>
+      <h1>LIVE COVID-19 CASES COUNTRY WISE</h1>
       <div className="covidData__input">
         <form onSubmit={handleSubmit}>
-          {/* input county name */}
+          <div>
           <input onChange={handleSearch} placeholder="Enter Country Name" />
-          <br />
           <button type="submit">Search</button>
+          </div>
         </form>
       </div>
 
-      {/* Showing the details of the country */}
       <div className="covidData__country__info">
         <p>Country Name : {country} </p>
 
