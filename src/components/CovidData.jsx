@@ -85,19 +85,21 @@ export function CovidData() {
       </div>
 
       <div className="covidData__country__info">
-        <p>Country Name : {country} </p>
+        {/* <div> */}
+        <p className="Country">Country Name : {country} </p>
 
-        <p>Cases : {cases}</p>
+        <p className="Cases">Cases : {cases}</p>
 
-        <p>Deaths : {deaths}</p>
+        <p className="Deaths">Deaths : {deaths}</p>
 
-        <p>Recovered : {recovered}</p>
+        <p className="Recovered" >Recovered : {recovered}</p>
 
-        <p>Cases Today : {todayCases}</p>
+        <p className="CasesToday">Cases Today : {todayCases}</p>
 
-        <p>Deaths Today : {deathCases}</p>
+        <p className="DeathsToday">Deaths Today : {deathCases}</p>
 
-        <p>Recovered Today : {recoveredCases}</p>
+        <p className="RecoveredToday">Recovered Today : {recoveredCases}</p>
+        {/* </div> */}
       </div>
     </div>
   );

@@ -9,7 +9,8 @@ body {
 }
 .covidData {
   background-color: black;
-  width: 80%;
+  width: 96%;
+  height: 50%;
   margin: auto;
   margin-top: 15px;
   border-radius: 6px;
@@ -54,18 +55,88 @@ div {
 /* detail stylings */
 
 .covidData__country__info {
+    display: flex;
+    /* display: inline; */
+    /* flex-wrap: wrap; */
   font-size: 20px;
   font-family:Arial, Helvetica, sans-serif;
-  width: 75%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
-  padding-left: 10px;
-  background-color: white;
+  /* height: auto; */
+  height: 50%;
+  /* padding-left: 10px; */
+  background-color: black;
   margin-top: 20px;
-  padding: 2px;
+  padding: 10px;
   border-radius: 10px;
   text-shadow: 1px 1px 1px rgb(71, 67, 67);
-  box-shadow: 5px 5px 5px rgb(71, 67, 67);
+  /* box-shadow: 5px 5px 5px rgb(71, 67, 67); */
   /* display: none; */
+}
+/* p{
+    background-color: blue;
+} */
+.Country{
+    border: 2px solid blue;
+    background-color: rgb(68, 0, 255);
+    border-radius: 5px;
+    height: 70px;
+    color: white;
+    margin-right: 5px;
+    width:180px ;
+}
+.Cases{
+    border: 2px solid rgb(163, 241, 7);
+    background-color: rgb(163, 247, 7);
+    border-radius: 5px;
+    height: 70px;
+    color: white;
+    margin-right: 5px; 
+    width:180px ;
+}
+.Deaths{
+    border: 2px solid tomato;
+    background-color: tomato;
+    border-radius: 5px;
+    height: 70px;
+    color: white;
+    margin-right: 5px;
+    width:180px ;
+}
+.Recovered{
+    border: 2px solid rgb(5, 244, 97);
+    background-color:  rgb(5, 244, 97);
+    border-radius: 5px;
+    height: 70px;
+    color: white;
+    margin-right: 5px;
+    width:180px ;
+}
+.CasesToday{
+    border: 2px solid rgb(163, 241, 7);
+    background-color: rgb(163, 247, 7);
+    border-radius: 5px;
+    height: 70px;
+    color: white;
+    margin-right: 5px;
+    width:180px ;
+}
+.DeathsToday{
+    border: 2px solid tomato;
+    background-color: tomato;
+    border-radius: 5px;
+    height: 70px;
+    color: white;
+    margin-right: 5px;
+    width:180px ;
+}
+.RecoveredToday{
+    border: 2px solid rgb(5, 244, 97);
+    background-color:  rgb(5, 244, 97);
+    border-radius: 5px;
+    height: 70px;
+    color: white;
+    width:190px ;
+
 }
