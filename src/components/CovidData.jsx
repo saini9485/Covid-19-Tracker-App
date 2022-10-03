@@ -10,6 +10,7 @@ export function CovidData() {
   const [deathCases, setDeathCases] = useState("");
   const [recoveredCases, setRecoveredCases] = useState("");
   const [userInput, setUserInput] = useState("");
+  const [toggle, setToggle] = useState(true);
   //const [darkTheme, setDarkTheme] = useState(false);
 
   useEffect(() => {
@@ -21,6 +22,16 @@ export function CovidData() {
         
       });
   }, []);
+
+  if (toggle) {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+  } else {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+  }
+
+
 
   const setData = ({
     country,
@@ -41,7 +52,12 @@ export function CovidData() {
   };
 
   const handleSearch = (e) => {
-    setUserInput(e.target.value);
+    // if(userInput==""){
+    //     alert("please inter Country name")
+    // }else{
+         setUserInput(e.target.value);
+    //}
+    // userInput("")
 
     // covidData__country__info ="block"
   };
@@ -57,9 +73,29 @@ export function CovidData() {
       .then((data) => {
         setData(data);
       });
-  };
+  };[]
+
+  // if (toggle) {
+  //   document.body.style.backgroundColor = "white";
+  //   document.body.style.color = "black";
+  // } else {
+  //   document.body.style.backgroundColor = "black";
+  //   document.body.style.color = "white";
+  // }
+
+
 
   return (
+
+<>
+    <div>
+    {toggle ? (
+      <button onClick={() => setToggle(!toggle)}>DARK THEME</button>
+    ) : (
+      <button onClick={() => setToggle(!toggle)}>LIGHT THEME</button>
+    )}
+  </div>
+
     <div className="covidData">
       {/* <div>
         backgroundColor={darkTheme ? "dark" : "light"}
@@ -101,6 +137,8 @@ export function CovidData() {
         <p className="RecoveredToday">Recovered Today : {recoveredCases}</p>
         {/* </div> */}
       </div>
+      
     </div>
+    </>
   );
 }

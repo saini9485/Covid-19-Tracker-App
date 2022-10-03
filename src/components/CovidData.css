@@ -5,12 +5,13 @@ h1 {
   border-radius: 10px;
 }
 body {
-  background-color: white;
+  background-color: black;
+
 }
 .covidData {
-  background-color: black;
+  /* background-color: black;
   width: 96%;
-  height: 50%;
+  height: 100%; */
   margin: auto;
   margin-top: 15px;
   border-radius: 6px;
@@ -58,6 +59,7 @@ div {
     display: flex;
     /* display: inline; */
     /* flex-wrap: wrap; */
+    animation-duration: 2s;
   font-size: 20px;
   font-family:Arial, Helvetica, sans-serif;
   width: 90%;
@@ -85,7 +87,9 @@ div {
     color: white;
     margin-right: 5px;
     width:180px ;
+    animation-duration: 3ms;
 }
+
 .Cases{
     border: 2px solid rgb(163, 241, 7);
     background-color: rgb(163, 247, 7);
@@ -93,7 +97,8 @@ div {
     height: 70px;
     color: white;
     margin-right: 5px; 
-    width:180px ;
+    width:160px ;
+   
 }
 .Deaths{
     border: 2px solid tomato;
@@ -102,7 +107,7 @@ div {
     height: 70px;
     color: white;
     margin-right: 5px;
-    width:180px ;
+    width:160px ;
 }
 .Recovered{
     border: 2px solid rgb(5, 244, 97);
@@ -120,7 +125,7 @@ div {
     height: 70px;
     color: white;
     margin-right: 5px;
-    width:180px ;
+    width:140px ;
 }
 .DeathsToday{
     border: 2px solid tomato;
@@ -129,7 +134,7 @@ div {
     height: 70px;
     color: white;
     margin-right: 5px;
-    width:180px ;
+    width:150px ;
 }
 .RecoveredToday{
     border: 2px solid rgb(5, 244, 97);
