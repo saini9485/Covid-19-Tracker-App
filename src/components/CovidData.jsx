@@ -73,7 +73,7 @@ export function CovidData() {
       .then((data) => {
         setData(data);
       });
-  };[]
+  };
 
   // if (toggle) {
   //   document.body.style.backgroundColor = "white";
