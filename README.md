@@ -1,3 +1,12 @@
+<h1>Covid-19 Project </h1>
+<img src ="output1.png" alt="image">
+
+Dark Theme
+
+<img src ="output2.png" alt="image">
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
